@@ -730,13 +730,15 @@
 						<div class="row pad_top20">
 							<!-- contact form -->
 
-
-<form method="POST" action="////formspree.io/sa.dasilva@hotmail.com" id="contact_form">
-<input type="email" name="_replyto" placeholder="Your email" />
-<textarea name="message" rows="5" placeholder="Your message"></textarea>
-<input type="text" name="_gotcha" style="display:none">
-<button type="submit">Send</button>
-</form>
+							<form id="contact_form" method="POST" action="////formspree.io/sa.dasilva@hotmail.com">
+								<input type="hidden" name="_next" value="////site.io/thanks.html">
+								<input type="text" name="name" placeholder="Your name" />
+								<input type="email" name="_replyto" placeholder="Your email" />
+								<input type="text" name="_subject" placeholder="Your subject" />
+								<textarea name="message" rows="5" placeholder="Your message"></textarea>
+								<input type="text" name="_gotcha" style="display:none">
+								<button type="submit">Send</button>
+								</form>
 
 						<form method="POST" action="////formspree.io/sa.dasilva@hotmail.com" id="contact_form" >
 								<input type="hidden" name="_next" value="////site.io/thanks.html">
