@@ -1,5 +1,4 @@
 <?php
-
 //Prefedined Variables
 $to = "sa.dasilva@hotmail.com";
 
@@ -47,3 +46,4 @@ print "Message not sent.";
 return false;
 }
 }
+?>
