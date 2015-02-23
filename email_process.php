@@ -1,4 +1,5 @@
 <?php
+
 //Prefedined Variables
 $to = "sa.dasilva@hotmail.com";
 
@@ -6,7 +7,7 @@ $to = "sa.dasilva@hotmail.com";
 $subject = stripslashes($_POST['subject']);
 
 // This IF condition is for improving security  and Prevent Direct Access to the Mail Script.
-if($_POST) {
+if ($_POST) {
 
 // Collect POST data from form
 $name = stripslashes($_POST['name']);
@@ -31,19 +32,18 @@ $headers .= 'Content-type: text/html; charset=UTF-8';
 
 if( ! empty($name) && ! empty($email) && ! empty($content) ) {
 
-// Sending Email
-if( mail($to, $subject, $content, $headers) ) {
-print "Your message was sent. I will get back to you soon!<br>";
-return true;
+  // Sending Email
+  if( mail($to, $subject, $content, $headers) ) {
+    print "Your message was sent. I will get back to you soon!<br>";
+    return true;
+  }
+  else {
+    print "Message not sent.";
+    return false;
+  }
 }
 else {
-print "Message not sent.";
-return false;
+  print "Message not sent.";
+  return false;
 }
 }
-else {
-print "Message not sent.";
-return false;
-}
-}
-?>
