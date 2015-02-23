@@ -750,7 +750,8 @@
 										</div> -->
 
 										<div class="control-group">
-											<input name="_subject" type="text" placeholder="* Subject: " />
+											<input name="_subject" type="text" class="validate['required'] textbox1 element_from_left" placeholder="* Subject : "
+											onfocus="this.placeholder = ''" onBlur="this.placeholder = '* Subject :'" />
 										</div>
 
 										<!-- <div class="control-group">
@@ -759,7 +760,8 @@
 										</div> -->
 
 										<div class="control-group">
-											<input name="email" type="email" placeholder="* Email: " />
+											<input name="email" type="text" class="validate['required','email']  textbox1 element_from_left"
+											placeholder="* Email : " onFocus="this.placeholder = ''" onBlur="this.placeholder = '* Email :'"/>
 										</div>
 
 										<!-- <div class="control-group">
@@ -771,7 +773,8 @@
 
 										<div class="col-md-6 text-center">
 											<div class="control-group">
-												<textarea name="message" rows="5" placeholder="* Message: "></textarea>
+												<textarea name="message" cols="" rows="" class="validate['required'] messagebox1 element_from_right"
+												placeholder="* Message : " onFocus="this.placeholder = ''" onBlur="this.placeholder = '* Message :'"></textarea>
 											</div>
 										</div>
 
