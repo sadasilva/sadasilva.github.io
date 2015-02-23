@@ -726,10 +726,14 @@
 						</div>
 					</div>
 
-					<div class="container">
+				<div class="container">
 						<div class="row pad_top20">
 							<!-- contact form -->
-							<form  id="contact_form" method="post" action="http://verdeamarelo.org/contact_form/email_process.php">
+
+							<form  id="contact_form" method="post" action="https://getsimpleform.com/messages?form_api_token=f53e8e618d60a048dcf9ebfc3c1db3b9">
+								<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+								<input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
+
 								<div class="clearfix">
 									<div class="col-md-6 text-center">
 										<div class="control-group">
@@ -738,7 +742,7 @@
 										</div>
 
 										<div class="control-group">
-											<input name="subject" type="text" class="validate['required'] textbox1 element_from_left" placeholder="* Subject : "
+											<input name="_subject" type="text" class="validate['required'] textbox1 element_from_left" placeholder="* Subject : "
 											onfocus="this.placeholder = ''" onBlur="this.placeholder = '* Subject :'" />
 										</div>
 
