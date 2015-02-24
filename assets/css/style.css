@@ -466,7 +466,7 @@ margin-top:0px; margin-right:0px; float: right;
 
 }
 .about_mar_left{ margin-left:5px; margin-top:8px; margin-bottom:144px;}
-.about-text1 p{ color:#f2f2f2!important; line-height:1.25; margin:10px 0px; font-weight: 400;}
+.about-text1 p{ color:#f2f2f2!important; line-height:1.20; margin:10px 0px; font-weight: normal;}
 .about-text1 p a{ color:#f2f2f2!important; text-decoration: underline;}
 .about-text1 p span{color:#ca9903;}
 .about-text2 { padding-bottom:20px;padding-top: 10px;line-height:1.25;}
