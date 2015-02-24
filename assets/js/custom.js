@@ -20,7 +20,7 @@ var twitter_lib_path = 'assets/js/lib/twitter/';
 //Preloader enable/disable (Query Loader 2.0)
 // ******************************************************************************************
 //Set true or false to enable/disable the prelaoder
-var preloader_enabled=true;
+var preloader_enabled=false;
 
 
 //Setting page Full width/ Boxed version
