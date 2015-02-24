@@ -5,7 +5,7 @@
 //Twitter Start
 // ******************************************************************************************
 //Set true or false to enable/disable
-var twitter_enabled = true;
+var twitter_enabled = false;
 
 //Your twitter username
 var twitter_username = 'jquery';
@@ -20,7 +20,7 @@ var twitter_lib_path = 'assets/js/lib/twitter/';
 //Preloader enable/disable (Query Loader 2.0)
 // ******************************************************************************************
 //Set true or false to enable/disable the prelaoder
-var preloader_enabled=true;
+var preloader_enabled=false;
 
 
 //Setting page Full width/ Boxed version
@@ -72,7 +72,7 @@ jQuery(document).ready(function($){
     {
     rules: {
     name: {
-    minlength: 2,
+    minlength: 5,
     required: true
     },
     email: {
@@ -84,7 +84,7 @@ jQuery(document).ready(function($){
     required: true
     },
     message: {
-    minlength: 2,
+    minlength: 10,
     required: true
     }
     },
@@ -93,7 +93,7 @@ jQuery(document).ready(function($){
     },
     success: function(element) {
     element
-    .text('OK!').addClass('valid')
+    .text('Great!').addClass('valid')
     .closest('.control-group').removeClass('error').addClass('success');
     }
 		// ,
