@@ -20,7 +20,7 @@ var twitter_lib_path = 'assets/js/lib/twitter/';
 //Preloader enable/disable (Query Loader 2.0)
 // ******************************************************************************************
 //Set true or false to enable/disable the prelaoder
-var preloader_enabled=false;
+var preloader_enabled=true;
 
 
 //Setting page Full width/ Boxed version
@@ -79,7 +79,7 @@ jQuery(document).ready(function($){
     required: true,
     email: true
     },
-    subject: {
+    _subject: {
     minlength: 2,
     required: true
     },
@@ -95,13 +95,14 @@ jQuery(document).ready(function($){
     element
     .text('OK!').addClass('valid')
     .closest('.control-group').removeClass('error').addClass('success');
-    },
-	submitHandler: function(form) {
-					// do other stuff for a valid form
-					$.post('email_process.php', $("#contact_form").serialize(), function(data) { // action file is here
-						$('#post_message').html(data);
-					});
-				}
+    }
+		// ,
+		// submitHandler: function(form) {
+		// 			// do other stuff for a valid form
+		// 			$.post('email_process.php', $("#contact_form").serialize(), function(data) { // action file is here
+		// 				$('#post_message').html(data);
+		// 			});
+		// 		}
     });
     }); // end document.ready
 
