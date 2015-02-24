@@ -20,9 +20,9 @@
 };
 
 OverlayLoader.prototype.createOverlay = function () {
-	
+
 	"use strict";
-	
+
 	//determine postion of overlay and set parent position
 	var overlayPosition = "absolute";
 
@@ -118,12 +118,12 @@ PreloadContainer.prototype.processQueue = function () {
 };
 
 PreloadContainer.prototype.addImage = function (src) {
-    
+
     this.toPreload.push(src);
 };
 
 PreloadContainer.prototype.preloadImage = function (url) {
-    
+
     var image = new PreloadImage();
     image.addToPreloader(this, url);
     image.bindLoadEvent();
@@ -134,7 +134,7 @@ function PreloadImage(parent) {
 };
 
 PreloadImage.prototype.addToPreloader = function (preloader, url) {
-	
+
     this.element = $("<img />").attr("src", url);
     this.element.appendTo(preloader.container);
     this.parent = preloader.parent;
@@ -166,7 +166,7 @@ PreloadImage.prototype.completeLoading = function () {
 
     var percentage = (this.parent.imageDone / this.parent.imageCounter) * 100;
 
-    
+
 
 	//update the percentage of the loader
 	this.parent.overlayLoader.updatePercentage(percentage);
@@ -208,15 +208,15 @@ function QueryLoader2(element, options) {
 };
 
 QueryLoader2.prototype.init = function() {
-	
 
-	
+
+
 	this.options = $.extend({}, this.defaultOptions, this.options);
 
-    
+
     var images = this.findImageInElement(this.element);
     if (this.options.deepSearch == true) {
-        
+
         var elements = this.$element.find("*:not(script)");
         for (var i = 0; i < elements.length; i++) {
             this.findImageInElement(elements[i]);
@@ -252,7 +252,7 @@ QueryLoader2.prototype.findImageInElement = function (element) {
 
         for (var i = 0; i < urls.length; i++) {
             if (this.validUrl(urls[i]) && this.urlIsNew(urls[i])) {
-                
+
                 var extra = "";
 
                 if (this.isIE() || this.isOpera()){
@@ -327,7 +327,7 @@ QueryLoader2.prototype.destroyContainers = function () {
 };
 
 QueryLoader2.prototype.endLoader = function () {
-	
+
 
 	this.destroyed = true;
 	this.onLoadComplete();

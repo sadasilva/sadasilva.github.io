@@ -20,7 +20,7 @@ var twitter_lib_path = 'assets/js/lib/twitter/';
 //Preloader enable/disable (Query Loader 2.0)
 // ******************************************************************************************
 //Set true or false to enable/disable the prelaoder
-var preloader_enabled=false;
+var preloader_enabled=true;
 
 
 //Setting page Full width/ Boxed version
@@ -121,8 +121,8 @@ jQuery(document).ready(function($){
 "use strict";
     if(preloader_enabled){
 		$("body").queryLoader2({
-        barColor: "#8f8f8f",
-        backgroundColor: "#1d1d1d",
+        barColor: "#bdbcbc",
+        backgroundColor: "#c20029",
         percentage: true,
         barHeight: 1,
         completeAnimation: "grow",
