@@ -102,18 +102,8 @@ jQuery(document).ready(function($){
 					// $.post('email_process.php', $("#contact_form").serialize(), function(data) { // action file is here
 					// 	$('#post_message').html(data);
 					// });
-					// $('#thankyouModal').modal('show');
-
-
-							$(document).ready(function(){
-									$('#thankyouModal').modal('show');
-									$("#contact_form").reset();
-							});
-
+					$('#thankyouModal').modal('show');
 				}
-
-
-
     });
     }); // end document.ready
 
