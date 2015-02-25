@@ -790,7 +790,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="formReset()">&times;</button>
                 <h4 class="modal-title" id="myModalLabel">Thank you for pre-registering!</h4>
             </div>
             <div class="modal-body">
@@ -852,6 +852,12 @@
 
 
 
+	<script>
+	function formReset()
+  {
+      document.getElementById("contact_form").reset();
+  }
+	</script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.queryloader2.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.tweet.min.js"></script>

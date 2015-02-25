@@ -103,8 +103,7 @@ jQuery(document).ready(function($){
 					// 	$('#post_message').html(data);
 					// });
 					$('#thankyouModal').modal('show');
-					$("#contact_form").reset();
-					$('#contact_form').reset();
+					// $("#contact_form").reset();
 				}
 
 		//
