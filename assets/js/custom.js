@@ -96,13 +96,15 @@ jQuery(document).ready(function($){
     .text('Great!').addClass('valid')
     .closest('.control-group').removeClass('error').addClass('success');
     }
-		,
-		submitHandler: function(form) {
-					// do other stuff for a valid form
-					$.post('////formspree.io/sa.dasilva@hotmail.com', $("#contact_form").serialize(), function(data) { // action file is here
-						$('#post_message').html(data);
-					});
-				}
+		// ,
+		// submitHandler: function(form) {
+		// 			// do other stuff for a valid form
+		//
+		// 			$.post('////formspree.io/sa.dasilva@hotmail.com', $("#contact_form").serialize(), function(data) { // action file is here
+		// 				$('#post_message').html(data);
+		// 			});
+		// }
+		//
     });
     }); // end document.ready
 
