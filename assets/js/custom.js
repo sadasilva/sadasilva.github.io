@@ -99,12 +99,17 @@ jQuery(document).ready(function($){
 		// ,
 		// submitHandler: function(form) {
 		// 			// do other stuff for a valid form
-		//
-		// 			$.post('////formspree.io/sa.dasilva@hotmail.com', $("#contact_form").serialize(), function(data) { // action file is here
+		// 			$.post('email_process.php', $("#contact_form").serialize(), function(data) { // action file is here
 		// 				$('#post_message').html(data);
 		// 			});
-		// }
-		//
+		// 		}
+
+		// 
+		// $(document).ready(function(){
+		// 		$('#thankyouModal').modal('show');
+		// });
+
+
     });
     }); // end document.ready
 
