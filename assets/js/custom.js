@@ -102,20 +102,16 @@ jQuery(document).ready(function($){
 					// $.post('email_process.php', $("#contact_form").serialize(), function(data) { // action file is here
 					// 	$('#post_message').html(data);
 					// });
-					$("#contact_form").reset();
-					$('#thankyouModal').modal('show');
+					// $('#thankyouModal').modal('show');
 
-// 					$('#clear-form').on('click', function()
-//     {
-//         $('#my-form').find('input:text, input:password, select, textarea').val('');
-//         $('#my-form').find('input:radio, input:checkbox').prop('checked', false);
-// });
+
+							$(document).ready(function(){
+									$('#thankyouModal').modal('show');
+									$("#contact_form").reset();
+							});
+
 				}
 
-		//
-		// $(document).ready(function(){
-		// 		$('#thankyouModal').modal('show');
-		// });
 
 
     });
