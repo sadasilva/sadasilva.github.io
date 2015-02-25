@@ -96,15 +96,16 @@ jQuery(document).ready(function($){
     .text('Great!').addClass('valid')
     .closest('.control-group').removeClass('error').addClass('success');
     }
-		// ,
-		// submitHandler: function(form) {
-		// 			// do other stuff for a valid form
-		// 			$.post('email_process.php', $("#contact_form").serialize(), function(data) { // action file is here
-		// 				$('#post_message').html(data);
-		// 			});
-		// 		}
+		,
+		submitHandler: function(form) {
+					// do other stuff for a valid form
+					// $.post('email_process.php', $("#contact_form").serialize(), function(data) { // action file is here
+					// 	$('#post_message').html(data);
+					// });
+					$('#thankyouModal').modal('show'); 
+				}
 
-		// 
+		//
 		// $(document).ready(function(){
 		// 		$('#thankyouModal').modal('show');
 		// });
